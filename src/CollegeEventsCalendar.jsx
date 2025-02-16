@@ -7,6 +7,8 @@ import "react-calendar/dist/Calendar.css";
  * Each event has a JS Date and additional info like title/club.
  * NOTE: The month is 0-indexed in JavaScript, so 1 means February.
  */
+
+
 const clubEvents = [
     {
         date: new Date(2025, 1, 21),
@@ -15,7 +17,7 @@ const clubEvents = [
         club: "SHPE",
         link: "https://discord.com/channels/1237208303977762906/1237208407124213851/1340024791196762122",
         location: "Oblivion Park",
-        description: "You will learn HTML, CSS and JavaScript. Also come to connect with peers!!",
+        description: "asd",
     },
     {
         date: new Date(2025, 1, 24),
@@ -34,21 +36,40 @@ const clubEvents = [
         location: "DHUM 301",
     },
     {
-        date: new Date(2025, 1, 18),
-        time: "5pm",
-        title: "We are people meeting2",
-        club: "We are people",
-        link: "https://discord.com/channels/1284304662043951268/1284304662849126421/1336386353943937085",
-        location: "DHUM 301",
+        date: new Date(2025, 1, 13),
+        time: "3:30pm",
+        title: "SGA General Body Meeting",
+        club: "SGA",
+        link: "none",
+        location: "DTEC 300",
     },
     {
-        date: new Date(2025, 1, 18),
-        time: "5pm",
-        title: "We are people meeting2",
-        club: "We are people",
-        link: "https://discord.com/channels/1284304662043951268/1284304662849126421/1336386353943937085",
-        location: "DHUM 301",
+        date: new Date(2025, 1, 20),
+        time: "3:30pm",
+        title: "SGA General Body Meeting",
+        club: "SGA",
+        link: "none",
+        location: "DTEC 300",
     },
+    {
+        date: new Date(2025, 1, 27),
+        time: "3:30pm",
+        title: "SGA General Body Meeting",
+        club: "SGA",
+        link: "none",
+        location: "DTEC 300",
+    },
+    {
+        date: new Date(2025, 1, 20),
+        time: "6:30pm",
+        title: "HTML & CSS Workshop",
+        club: "Coding club",
+        link: "none",
+        location: "DTEC 426",
+    },
+
+
+
 ];
 
 function CollegeEventsCalendar() {
@@ -101,14 +122,18 @@ function CollegeEventsCalendar() {
 
     return (
         <div className="flex flex-row-2">
+
+
             <div>
+
+
 
                 <Calendar
                     onChange={handleDateChange}
                     value={selectedDate}
                     // The tileContent prop is what allows us to render event titles on each day
                     tileContent={tileContent}
-                    className="w-[700px] h-[450px] no-underline"
+                    className="w-[700px] h-[550px] no-underline"
                     locale="en-US"
                     minDate = {new Date(2025, 1, 1)}
                     maxDate = {new Date(2026, 0, 1)}
@@ -120,7 +145,9 @@ function CollegeEventsCalendar() {
 
             </div>
 
-                <div className="flex flex-col p-2 w-[300px] h-[450px] border-[1px] border-solid border-[#a0a096] text-left">
+                <div className="flex flex-col p-4 w-[300px] h-[550px] border-[1px] border-solid border-[#a0a096] text-left">
+
+
 
                     <div className="mb-5 text-[1.25rem] font-normal">
                         <h2>List of events: </h2>
@@ -140,6 +167,7 @@ function CollegeEventsCalendar() {
                                 </div>))}
                         </div>
                     </div>
+
 
                 </div>
 
