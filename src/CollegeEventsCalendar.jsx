@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
@@ -33,6 +33,22 @@ const clubEvents = [
         link: "https://discord.com/channels/1284304662043951268/1284304662849126421/1336386353943937085",
         location: "DHUM 301",
     },
+    {
+        date: new Date(2025, 1, 18),
+        time: "5pm",
+        title: "We are people meeting2",
+        club: "We are people",
+        link: "https://discord.com/channels/1284304662043951268/1284304662849126421/1336386353943937085",
+        location: "DHUM 301",
+    },
+    {
+        date: new Date(2025, 1, 18),
+        time: "5pm",
+        title: "We are people meeting2",
+        club: "We are people",
+        link: "https://discord.com/channels/1284304662043951268/1284304662849126421/1336386353943937085",
+        location: "DHUM 301",
+    },
 ];
 
 function CollegeEventsCalendar() {
@@ -47,6 +63,7 @@ function CollegeEventsCalendar() {
      * tileContent: Display the event title(s) directly under
      * the day number in the calendar tile.
      */
+
     const tileContent = ({ date, view }) => {
         // Ensure we're only modifying month view tiles (not year or decade)
         if (view === "month") {
@@ -55,12 +72,24 @@ function CollegeEventsCalendar() {
             );
 
             // If there are events on this date, display their titles.
+
+            if (dayEvents.length >= 2) {
+                return (
+                    <>
+                        <br/>
+                        <span>{dayEvents.length} events</span>
+                    </>
+
+                )
+            }
+
             if (dayEvents.length > 0) {
                 return (
                     <div className="event-titles">
                         {dayEvents.map((event, index) => (
-                            <div key={index} style={{ fontSize: "0.8rem", marginTop: "2px" }}>
-                                {event.title}
+                            <div key={index} style={{ fontSize: "0.7rem", marginTop: "2px" }}>
+                                {event.title} {event.time}
+
                             </div>
                         ))}
                     </div>
@@ -81,27 +110,31 @@ function CollegeEventsCalendar() {
                     tileContent={tileContent}
                     className="w-[700px] h-[450px] no-underline"
                     locale="en-US"
-                    minDate = {new Date(2025, 0, 1)}
+                    minDate = {new Date(2025, 1, 1)}
                     maxDate = {new Date(2026, 0, 1)}
+
+                    prev2Label={null}
+                    next2Label={null}
 
                 />
 
             </div>
 
-                <div className="flex flex-col p-2 w-[300px] h-[450px] border-[1px] border-solid border-[#a0a096]">
-                    <div className="mb-5">
-                        <h2 >List of events: </h2>
+                <div className="flex flex-col p-2 w-[300px] h-[450px] border-[1px] border-solid border-[#a0a096] text-left">
+
+                    <div className="mb-5 text-[1.25rem] font-normal">
+                        <h2>List of events: </h2>
                         <h2>{selectedDate.toDateString()}</h2>
                     </div>
-                    <div>
-                        <div>
+                                <div>
+                                <div>
 
                             { clubEvents.filter((event) => event.date.toDateString() === selectedDate.toDateString()).map((event, index) => (
                                 <div key={index} className="mb-5">
 
-                                    <strong> {event.title} </strong> <br/>
-                                    {event.location} {event.time} <br/>
-                                    {event.club} <br/>
+                            <strong> {event.title} </strong> <br/>
+                            {event.location} {event.time} <br/>
+                            {event.club} <br/>
                                     <a href={event.link} target="_blank">Link</a> <br/>
 
                                 </div>))}

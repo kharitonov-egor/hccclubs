@@ -1,6 +1,5 @@
 import './App.css'
 import hccLogo from './assets/hcc_logo.png';
-import Calendar from 'react-calendar'
 import CollegeEventsCalendar from "./CollegeEventsCalendar.jsx";
 
 function App() {
@@ -9,8 +8,8 @@ function App() {
     <>
 
         <div className="mb-5">
-            <strong><h1>HCC Clubs Events</h1></strong>
-            <p>All of the club meetings in HCC in one place:</p>
+            <strong><h1>HCC Clubs & Events</h1></strong>
+            <p>Your one-stop hub for all HCC club meetings and campus activities</p>
         </div>
 
 
