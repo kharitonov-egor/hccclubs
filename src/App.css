@@ -3,16 +3,17 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
 
   font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
 
 }
 
 .react-calendar__month-view__weekdays__weekday abbr {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 a {

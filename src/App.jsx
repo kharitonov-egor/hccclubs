@@ -9,8 +9,8 @@ function App() {
 
           <div className="mb-5">
               <div className="flex flex-row gap-0 items-center justify-center">
-                  <div className="w-[50px] justify-normal">
-                      <img src={hccLogo} alt="hcc logo" className="w-[50px]"/>
+                  <div className="w-[50px] justify-normal mr-[7px]">
+                      <img src={hccLogo} alt="hcc logo" className="w-[50px] "/>
                   </div>
 
                   <div>
