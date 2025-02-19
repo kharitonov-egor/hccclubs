@@ -112,7 +112,7 @@ function CollegeEventsCalendar() {
                                                 event.description && event.description.length > 0 ? (
                                                     <p className="hidden md:block">{event.description}</p>
                                                 ) : (
-                                                    <p>No description for this event 🥲</p>
+                                                    <p className="hidden md:block">No description for this event 🥲</p>
                                                 )
                                             }
 
