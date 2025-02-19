@@ -91,7 +91,7 @@ function CollegeEventsCalendar() {
 
             </div>
 
-                <div className="flex flex-col p-4 w-[100%]  text-xs md:text-base md:w-[400px] h-[550px] border-[1px] border-solid border-[#a0a096] text-left ">
+                <div className="flex flex-col p-4 w-[100%]  text-xs md:text-base md:w-[400px] h-[550px] border-[1px] border-solid text-left ">
 
 
 
