@@ -8,13 +8,13 @@ function App() {
       <>
 
           <div className="mb-5">
-              <div className="flex flex-row gap-0 items-center justify-center">
+              <div className="flex flex-row gap-0 items-center justify-center mb-1">
                   <div className="w-[50px] justify-normal mr-[7px]">
                       <img src={hccLogo} alt="hcc logo" className="w-[50px] "/>
                   </div>
 
                   <div>
-                      <strong><h1>HCC Clubs & Events</h1></strong>
+                      <strong><h1 className="text-3xl md:text-5xl">HCC Clubs & Events</h1></strong>
                   </div>
 
               </div>

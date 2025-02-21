@@ -4,13 +4,6 @@ import "react-calendar/dist/Calendar.css";
 
 import { clubEvents } from './assets/clubEvents.js';
 
-/**
- * Example events.
- * Each event has a JS Date and additional info like title/club.
- * NOTE: The month is 0-indexed in JavaScript, so 1 means February.
- */
-
-
 function CollegeEventsCalendar() {
     const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -18,11 +11,6 @@ function CollegeEventsCalendar() {
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
-
-    /**
-     * tileContent: Display the event title(s) directly under
-     * the day number in the calendar tile.
-     */
 
     const tileContent = ({ date, view }) => {
         // Ensure we're only modifying month view tiles (not year or decade)
@@ -79,8 +67,9 @@ function CollegeEventsCalendar() {
                     value={selectedDate}
                     // The tileContent prop is what allows us to render event titles on each day
                     tileContent={tileContent}
-                    className="w-[100%] md:w-[700px] h-[550px] md:text-base no-underline text-xs"
+                    className="w-[100%] md:w-[700px] h-[575px] md:text-base no-underline text-xs"
                     locale="en-US"
+
                     minDate = {new Date(2025, 1, 1)}
                     maxDate = {new Date(2026, 0, 1)}
 
@@ -91,7 +80,7 @@ function CollegeEventsCalendar() {
 
             </div>
 
-                <div className="flex flex-col p-4 w-[100%]  text-xs md:text-base md:w-[400px] h-[550px] border-[1px] border-solid text-left ">
+                <div className="flex flex-col p-4 w-[100%]  text-xs md:text-base md:w-[400px] h-[575px] border-[1px] border-solid text-left ">
 
 
 

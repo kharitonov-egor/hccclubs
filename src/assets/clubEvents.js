@@ -9,15 +9,6 @@ export const clubEvents = [
     description: "We’re meeting up at Oblivion Games to play board and table top games, please join us! Bring any card games or board games you want with you!",
   },
   {
-    date: new Date(2025, 1, 24),
-    time: "12pm",
-    title: "Chess workshop",
-    club: "Chess club",
-    link: "https://discord.com/channels/1276572778753167460/1276572902279352330/1338884665448075274",
-    location: "Quite Lounge",
-    description: " We will host a chess workshop from 12:00-1:00 and teach people chess in the quiet lounge.",
-  },
-  {
     date: new Date(2025, 1, 18),
     time: "3pm",
     title: "We are people meeting",
