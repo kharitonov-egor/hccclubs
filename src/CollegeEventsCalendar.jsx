@@ -2,6 +2,8 @@ import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
+// testing new branch
+
 import { clubEvents } from './assets/clubEvents.js';
 
 function CollegeEventsCalendar() {
