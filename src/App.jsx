@@ -14,26 +14,17 @@ function App() {
                   </div>
 
                   <div>
-                      <strong><h1 className="text-3xl md:text-5xl">HCC Clubs & Events</h1></strong>
+                      <strong><h1 className="text-3xl md:text-5xl">HCC Clubs Events</h1></strong>
                   </div>
 
               </div>
 
-              <p>Your one-stop hub for all HCC club meetings and campus activities</p>
+              <p>Your one-stop hub for all HCC clubs meetings</p>
+              <p><span className="text-red-500">Red</span> dot = event that day</p>
           </div>
 
 
           <CollegeEventsCalendar/>
-
-          <div className="mt-5">
-
-          <div className="m-auto">
-                  <span className="m-auto">Created by <a href="https://kharitonovegor.com" target="_blank">Egor Kharitonov</a> 2025</span>
-                  <br/>
-                  <span>Not affiliated with HCC</span>
-
-              </div>
-          </div>
 
 
       </>
